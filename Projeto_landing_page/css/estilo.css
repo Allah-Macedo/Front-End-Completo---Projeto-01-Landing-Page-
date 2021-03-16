@@ -1,0 +1,15 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html,body {height: 100%;}
+
+.box {max-width: 1220px; margin: 0 auto; padding: 0 2%;}
+.clear {clear: both;}
+
+header {width: 100%; height: 60px; padding: 8px 0;  background: rgb(33, 35, 67);}
+header div.logo img {margin: 6px;}
+
+section.banner_form {width: 100%; height: 557px; background-image: url('../images/header_bg.png'); background-size: cover; background-position: center;}
+section.banner_form > div.box {height: 100%;}
+section.banner_form div.box_form {width: 400px; height: 100%; background: rgb(255, 255, 255); float: right;} 
+
+
+
