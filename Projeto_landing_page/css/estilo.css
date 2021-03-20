@@ -12,12 +12,57 @@ header {width: 100%; padding: 15px; height: 50px; background: rgb(32, 32, 32);}
 header div.logo {display: inline-block;  text-align: center; padding-bottom: 2%;  width: 100%;}
 
 /* hero */
-section.hero {width: 100%; height: 557px; background: rgb(128, 128, 128) url('../images/header_bg.png') center; background-size: cover;}
-section.hero div.box_list_header {float: left; width: 50%; max-width: 500px; margin-top: 130px; padding: 50px;  border: 5px solid green;}
-section.hero div.box_list_header  li {padding: 10px 0;}
+section.hero {width: 100%; height: 550px; background: rgb(128, 128, 128) url('../images/header_bg.png') center; background-size: cover;}
+section.hero div.box_list_header {float: left; width: 50%; max-width: 500px; margin-top: 130px; padding: 50px;  border: 8px solid rgba(127, 255, 0, 0.4); background-clip: padding-box; background: rgba(22, 17, 15, 0.5);}
+section.hero div.box_list_header  li {padding: 10px 0; color: rgb(255, 255, 255); font-size: 16pt; font-weight: bold;}
 
-section.hero div.box_form_header {float: right; position: relative; width: 50%; max-width: 450px; height: 500px; border: 5px solid green;}
+section.hero div.box_form_header {float: right; position: relative; top: -8px; padding: 20px; width: 50%; max-width: 450px; height: 565px; border: 8px solid rgba(127, 255, 0, 0.4); background-clip: padding-box; background:rgba(255, 255, 255, 0.3);}
+section.hero div.box_form_header h2 {color: rgb(255, 255, 255); font-weight: normal;}
+section.hero div.box_form_header form {margin: 15px auto; padding: 10px auto;}
+section.hero div.box_form_header form div.input_text span {display: block; color:rgb(221, 212, 212); margin: 5px auto;}
+section.hero div.box_form_header form div.input_text input[type="text"] {padding: 10px; width: 100%; height: 40px; font-size: 13pt; color: yellowgreen;}
+section.hero div.box_form_header form p {color: rgb(255, 255, 255); margin: 10px auto;}
+section.hero div.box_form_header form div.input_submit {text-align: center;}
+section.hero div.box_form_header form div.input_submit input[type="submit"] {width: 50%; height: 40px; margin-top: 30px; background: cyan; color: rgb(63, 44, 44); font-size: 13pt; border: none; cursor: pointer;}
+section.hero div.box_form_header form div.input_submit input[type="submit"]:hover {background: rgb(50, 184, 184); color: white;}
 
 /* text */
-section.text {padding: 40px 0; background: rgb(24, 24, 24);}
+section.text {padding: 30px 0; background: rgb(24, 24, 24); text-align: center;}
+section.text h2 {color: rgb(127, 255, 0); font-size: 25pt; margin-bottom: 10px; text-align: center;}
+section.text p {width: 50%; display: inline-block; text-align: left; color: aliceblue;} 
+section.text div.arrow {position: relative; top: 69px; color:aquamarine; font-size: 40pt;}
 
+/* modal */
+section.modal {padding: 90px; background: rgb(68, 68, 68); text-align: center;}
+section.modal h2 {color: rgb(127, 255, 212); font-size: 20pt; margin-bottom: 10px; font-weight: normal;}
+section.modal div.box_modal {display: flex; flex-wrap: no-wrap;}
+section.modal div.modal_single {width: 33.3%; margin: 10px; padding: 15px; border: 2px solid chartreuse;}
+section.modal div.modal_single img {width: 100%;}
+section.modal div.modal_single p {text-align: left; color: rgb(255, 255, 255); font-size: 13pt;}
+
+
+/* footer */
+footer {background: rgb(32, 32, 32); padding: 20px 0; border-top: 2px solid aquamarine; text-align: center;}
+footer p {color: white; font-size: 13pt;}
+
+/* media query */ 
+@media (max-width: 1024px) {
+    /* hero */
+    section.hero div.box_list_header {float: left; width: 50%; max-width: 400px; margin-top: 130px; padding: 50px;}
+    section.hero div.box_form_header {height: 500px; top: 15px; max-width: 400px;}
+
+    /* modal */
+    section.modal div.modal_single { padding: 15px; border: 2px solid chartreuse;}
+    section.modal div.box_modal {display: flex; flex-wrap: nowrap;}
+}
+
+@media (max-width: 768px) {
+    /* hero */
+    section.hero {text-align: center; height: 900px;}
+    section.hero div.box_list_header {display: inline-block; float: none; width: 100%; max-width: 400px; margin-top: 0; position: relative; top: 15px;}
+    section.hero div.box_form_header {display: inline-block; float: none; height: 500px; top: 80px; width: 100%; max-width: 400px; margin-top: -50px;}
+
+     /* modal */
+     section.modal div.box_modal {display: flex; flex-wrap: wrap;}
+     section.modal div.modal_single {width: 100%; margin-top: 20px;}
+}
